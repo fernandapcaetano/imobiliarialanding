@@ -1,0 +1,310 @@
+@font-face {
+    font-family: Inter;
+    src: url(../sources/fonte/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(89.33deg, rgba(0, 0, 0, 0.76) 0.58%, rgba(0, 0, 0, 0.560412) 37.93%, rgba(0, 0, 0, 0) 99.48%), url(../sources/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+header {
+    
+    display: flex;
+    flex-direction: row;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+header .logo{
+    font-size: 40px;
+    color: #1B3BE7;
+    font-weight: 800;
+}
+header a{
+    color: white;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #1B3BE7;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 30vw;
+    cursor: pointer;
+}
+header button:hover{
+    font-size: 16px;
+}
+
+.home{
+    display: flex;
+    padding-top: 40px;
+}
+.home_info{
+    width: 40vw;
+    color: white;
+}
+.home_info h1{
+    width: 288px;
+    font-size: 65px;
+    font-weight: 700;
+}
+.home_info p{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.home_form{
+    padding-left: 15vw;
+    padding-top: 10vh;
+}
+.home_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home_form form input{
+    width: 397px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.home_form form input::placeholder{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.home_form form button{
+    color: white;
+    background-color: #1B3BE7;
+    width: 340px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border: none;border-radius: 20px;
+    cursor: pointer;
+}
+.home_form form button:hover{
+    font-size: 18px;
+}
+
+.sobre_nos{
+    display: flex;
+    padding: 40px 80px;
+    
+}
+.sobre_nos .sobre_imagens{
+    width: 454px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.sobre_imagem, .sobre_imagem_embaixo{
+    background-image: url(../sources/3d-rendering-loft-scandinavian-living-room-with-working-table-and-bookshelf.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.sobre_nos .sobre_imagens .sobre_imagem{
+    height: 299px;
+    width: 454px;
+    border-radius: 20px;
+}
+.sobre_nos .embaixo{
+    width: 454px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sobre_nos .sobre_imagem_embaixo{
+    padding-top: 30px;
+    background-image: url(../sources/3d-rendering-loft-scandinavian-living-room-with-working-table-and-bookshelf.jpg);
+    height: 161px;
+    width: 138px;
+}
+.sobre_nos .sobre_imagem_embaixo:nth-child(1){
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.sobre_nos .sobre_imagem_embaixo:nth-child(2){
+    border-radius: 20px;
+}
+.sobre_nos .sobre_imagem_embaixo:nth-child(3){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sobre_nos .sobre_nos_info{
+    width: 50vw;
+    padding-left: 216px;
+}
+.sobre_nos .sobre_nos_info h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1B3BE7;
+}
+.sobre_nos .sobre_nos_info h3{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sobre_nos .sobre_nos_info p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.sobre_nos .sobre_nos_info button{
+    width: 214px;
+    height: 82px;
+    background-color: #1B3BE7;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.ofertas{
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+}
+.ofertas h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1B3BE7;
+}
+.ofertas h3{
+    width: 329px;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.propriedades{
+    display: flex;
+
+}
+
+.ofertas .propriedades .propriedade_card{
+    width: 256px;
+    height: 376px;
+    border-radius: 20px;
+    box-shadow: -3px 4px 17px 7px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-right: 5%;
+}
+.ofertas .propriedades .propriedade_card .card_imagem{
+    width: 100%;
+    height: 186px;
+    background-image: url('../sources/low-angle-shot-of-a-facade-of-a-white-modern-building-under-a-blue-clear-sky.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+.card_imagem:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.propriedade_card .titulo{
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.propriedade_card .card_info{
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 5px;
+    padding-top: 8px;
+}
+.propriedade_card .bairro_cidade{
+    padding-right: 39px;
+}
+.propriedade_card .quarto_banheiro{
+    width: 94px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.propriedade_card .quarto_banheiro iconify-icon{
+    padding-right: 8px;
+}
+.propriedade_card .preco{
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+.propriedade_card button{
+    background-color: #1B3BE7;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 157px;
+    border: none;
+    margin-left: 20%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.propriedade_card button:hover{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #1B3BE7;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+footer a{
+    color: white;
+}
